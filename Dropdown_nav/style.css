@@ -1,0 +1,33 @@
+.dropdown{
+    text-align: center;
+    width: 150px;
+}
+.dropdown .dropdown-btn{
+    background-color:yellowgreen;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+.sub-menu{
+    display: none;
+    box-shadow: 0 0 10px rgb(160, 153, 153);
+}
+.sub-menu a{
+    display:block;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+    padding: 5px;
+}
+.sub-menu a:hover{
+    background-color: #eee;
+}
+.dropdown:hover .dropdown-btn{
+    background-color: rgb(91, 125, 24);
+}
+.dropdown:hover .sub-menu{
+    display: block;
+}
