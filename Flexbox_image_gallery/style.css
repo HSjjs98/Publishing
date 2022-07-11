@@ -1,0 +1,85 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 1.5em;
+}
+.gallery{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+.gallery li{
+    border: 5px solid #000;
+    flex: 1;
+    background: no-repeat center center;
+    background-size: cover;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.gallery li:last-child{
+    border-right: none;
+}
+.gallery li:nth-child(1){
+    background-image: url(./images/artistic-image-01.jpg);
+}
+.gallery li:nth-child(2){
+    background-image: url(./images/artistic-image-02.jpg);
+}
+.gallery li:nth-child(3){
+    background-image: url(./images/artistic-image-03.jpg);
+}
+.gallery li:nth-child(4){
+    background-image: url(./images/artistic-image-04.jpg);
+}
+.gallery li:nth-child(5){
+    background-image: url(./images/artistic-image-05.jpg);
+}
+.gallery li:hover{
+    flex: 3;
+    filter: grayscale(1);
+}
+.content{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    bottom: -350px;
+    height: 250px;
+    padding: 20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.sns a{
+    color: #333;
+    text-decoration: none;
+}
+.gallery li:hover .content{
+    bottom:0;
+    transition-delay: 0.5s;
+}
+.content:before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: -10px;
+    transform-origin: left bottom;
+    transform: rotate(-5deg) scale(1.3)
+}

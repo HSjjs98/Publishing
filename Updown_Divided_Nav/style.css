@@ -1,0 +1,75 @@
+body{
+    background-color: #444;
+}
+.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.item {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+.pic,
+.explanation {
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+}
+.pic {
+    background-color: #333;
+    text-align: center;
+    height: inherit;
+    width: 100%;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+.item:hover .pic img {
+    animation: ani 1s linear infinite;
+}
+.pic span {
+    margin-top: 0;
+    color: #fff;
+}
+.explanation {
+    background-color: #fff;
+    color: #000;
+    height: inherit;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    border-radius: 0 0 5px 5px;
+}
+.explanation a {
+    background-color: yellowgreen;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.explanation a:hover {
+    background-color: #000;
+}
+.item:hover .pic {
+    top: -50%;
+}
+.item:hover .explanation {
+    top: 50%;
+    opacity: 1;
+}
+
+@keyframes ani {
+    0%,100% {
+        transform: scale(0.9)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+}

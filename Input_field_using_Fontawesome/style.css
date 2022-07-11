@@ -1,0 +1,51 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.item{
+    width: 300px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.item input[type=text],
+.item input[type=email],
+.item input[type=tel]{
+    border: 1px solid rgba(0, 0, 0, 0.358);
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+}
+.item input:focus{
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+.item input:focus ~ .fa{
+    background-color: dodgerblue;
+}
+.item input:focus::placeholder{
+    visibility: hidden;
+}
+.item .fa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: gray;
+    transition: 0.5s;
+    border-radius: 5px;
+}
