@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid #000;
+    position: relative;
+    /* transition: 0.5s; */
+}
+/* .box:hover{
+    background-color: rgba(153, 205, 50, 0.281);
+} */
+/* inline-block */
+/* .box:before{
+    content: 'abc';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: 0.5s;
+} */
+/* .box:after{
+    content: 'def';
+    position: absolute;
+    right: 0;
+    top: -1px;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: 0.5s;
+}
+.box:hover::before{
+    left: -100px;
+}
+.box:hover::after{
+    right: -100px;
+} */
+/* 가상 요소에 가상클래스 적용 불가 */
+/* .box::before:hover{
+    background-color: blue;
+} */

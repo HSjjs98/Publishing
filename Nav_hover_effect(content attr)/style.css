@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+.gnb a{
+    width: 300px;
+    display: block;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.gnb a::before,
+.gnb a::after
+{
+    content: attr(data-text);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.gnb a::before{
+    top:0;
+    background-color: crimson;
+}
+.gnb a::after{
+    background-color: royalblue;
+    top: 100%;
+}
+.gnb a:hover:before{
+    top: -100%;
+}
+.gnb a:hover:after{
+    top: 0;
+}
