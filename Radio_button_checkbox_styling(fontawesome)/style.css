@@ -1,0 +1,38 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form input[type=checkbox]{
+    display: none;
+}
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+form label:before{
+    content: '\f2bb';
+    font-family: fontawesome;
+    border: 1px solid #333;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    color: transparent;
+    transition: 0.3s;
+}
+form input[type=checkbox]:checked + label:before{
+    background-color: crimson;
+    color: #fff;
+    border-color: transparent;
+}
+form input[type=checkbox] + label:active:before{
+    transform: scale(0);
+}
